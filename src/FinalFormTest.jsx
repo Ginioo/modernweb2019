@@ -18,6 +18,7 @@ const FinalFormTest = ({ fieldCount = 0, onSubmit }) => {
     return (
         <Container fluid style={{ padding: '1rem 1.5rem' }}>
             <Form
+                subscription={{ submitting: true }}
                 onSubmit={onSubmit}
                 render={({ handleSubmit, form, values }) => {
                     return (
